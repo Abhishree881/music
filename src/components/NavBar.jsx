@@ -36,7 +36,7 @@ const Container = styled.div`
   top: 0;
   transition: all 0.3s ease-in-out;
   background-color: ${({ navBackground }) =>
-    navBackground ? "rgba(0,0,0,0.7)" : "none"};
+    navBackground ? "rgba(0,0,0,0.9)" : "none"};
   .search__bar {
     background-color: white;
     width: 30%;

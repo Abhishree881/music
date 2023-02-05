@@ -208,7 +208,7 @@ const Container = styled.div`
       padding: 1rem 3rem;
       transition: 0.3 ease-in-out;
       background-color: ${({ headerBackground }) =>
-        !headerBackground ? "black" : "none"};
+        headerBackground ? "rgb(0,0,0,0.9)" : "none"};
     }
     .tracks {
       margin: 0 2rem;
@@ -217,8 +217,10 @@ const Container = styled.div`
       margin-bottom: 5rem;
       .row {
         padding: 0.5rem 1rem;
+        cursor: pointer;
         display: grid;
         grid-template-columns: 0.3fr 3.1fr 2.04fr 0.1fr;
+        border-radius: 15px;
         &:hover {
           background-color: rgba(0, 0, 0, 0.7);
         }

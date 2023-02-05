@@ -12,12 +12,12 @@ export default function Music() {
   const [{ token }, dispatch] = useStateProvider();
   const bodyRef = useRef();
   const [navBackground, setNavBackground] = useState(false);
-  const [headerbBackground, setHeaderBackground] = useState(false);
+  const [headerBackground, setHeaderBackground] = useState(false);
   const bodyScrolled = () => {
     bodyRef.current.scrollTop >= 30
       ? setNavBackground(true)
       : setNavBackground(false);
-    bodyRef.current.scrollTop >= 268
+    bodyRef.current.scrollTop >= 262
       ? setHeaderBackground(true)
       : setHeaderBackground(false);
   };
@@ -44,7 +44,7 @@ export default function Music() {
         <div className="body" ref={bodyRef} onScroll={bodyScrolled}>
           <NavBar navBackground={navBackground} />
           <div className="body__contents">
-            <Body headerbBackground={headerbBackground} />
+            <Body headerBackground={headerBackground} />
           </div>
         </div>
       </div>
@@ -59,7 +59,7 @@ const Container = styled.div`
   max-height: 100vh;
   overflow: hidden;
   display: grid;
-  grid-template-rows: 85vh 15vh;
+  grid-template-rows: 88vh 12vh;
   .music__body {
     display: grid;
     grid-template-columns: 15vw 85vw;

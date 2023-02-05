@@ -38,27 +38,28 @@ export default function Sidebar() {
 
 const Container = styled.div`
   background-color: #191726;
-  color: #b3b3b3;
+  color: aliceblue;
   display: flex;
   flex-direction: column;
   height: 100%;
   width: 100%;
   // font-family: "Comic Sans MS", sans-serif;
-  font-size: 2vh;
+  font-size: 2.5vh;
+  font-weight: bold;
   .top__links {
     display: flex;
     flex-direction: column;
     .logo {
       text-align: center;
-      margin: 2vh 1vh;
-      // display: flex;
-      // flex-direction: row;
-      // align-items: center;
+      margin: 3vh 1rem;
+      margin-bottom: 4vh;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      // padding: 0 1rem;
       // justify-content: center;
-      // font-size: 2.5vh;
       img {
-        max-inline-size: 80%;
-        // margin-right: 1vh;
+        max-inline-size: 65%;
         block-size: auto;
       }
     }
@@ -74,13 +75,19 @@ const Container = styled.div`
         cursor: pointer;
         transition: 0.3 ease-in-out;
         &:hover {
-          color: white;
+          color: wheat;
+        }
+        svg {
+          font-size: 3.5vh;
         }
       }
     }
   }
   hr {
-    width: 80%;
+    width: 90%;
+    align-self: center;
+    margin: 1.5rem 0;
     border: 1px solid grey;
+    opacity: 0.2;
   }
 `;

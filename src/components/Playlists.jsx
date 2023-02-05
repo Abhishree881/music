@@ -54,6 +54,9 @@ export default function Playlists() {
 const Container = styled.div`
   height: 100%;
   overflow: hidden;
+  font-size: 2vh;
+  font-weight: 500;
+  margin: 0 1rem;
   ul {
     list-style-type: none;
     display: flex;
@@ -80,7 +83,7 @@ const Container = styled.div`
       cursor: pointer;
       transition: 0.3 ease-in-out;
       &:hover {
-        color: white;
+        color: wheat;
       }
     }
   }
